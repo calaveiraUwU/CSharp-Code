@@ -8,7 +8,7 @@ public abstract class PowerUp : ScriptableObject
     private HealthBehaviour hb; //Declaramos un objeto de tipo gestor de vida que nosotros hemos creado y lo podamos gestionar des de el editor de Unity.
     private GameObject _collission; //Un objeto vacio para asignarle la colisión.
 
-    public abstract void Apply();
+    public abstract void Apply(); //Generamos que la clase le puedan heredar los scriptable objects.
 
     private void OnTriggerEnter(Collider other)
     {
